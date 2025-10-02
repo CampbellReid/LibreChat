@@ -1240,3 +1240,4 @@ export const compactAgentsBaseSchema = tConversationSchema.pick({
 export const compactAgentsSchema = compactAgentsBaseSchema
   .transform((obj) => removeNullishValues(obj))
   .catch(() => ({}));
+
